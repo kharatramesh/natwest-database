@@ -1,4 +1,4 @@
 FROM mysql
 ENV MYSQL_DATABASE priar
-COPY ./createtable.sql /docker-entrypoint-initdb.d/
+COPY ./createtables.sql /docker-entrypoint-initdb.d/
 COPY ./insertvalues.sql /docker-entrypoint-initdb.d/
